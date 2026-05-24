@@ -1,0 +1,25 @@
+{
+  "name": "@cursor/mcp-reader",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Standalone MCP module for Cursor workspace tracking and safe metadata extraction.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "serve": "npm start",
+    "test": "npm run build && node dist/testRunner.js",
+    "dev": "tsc -p tsconfig.json --watch"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "isomorphic-git": "^1.38.1",
+    "micromatch": "^4.0.8",
+    "sql.js": "^1.14.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "typescript": "^5.5.0"
+  }
+}
